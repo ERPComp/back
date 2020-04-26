@@ -1,6 +1,7 @@
 package com.example.ERP_IT_Comany.entity;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -19,6 +20,27 @@ public class Employer {
     private List<Ticket> tickets_assignee;
     @OneToMany(mappedBy = "reporter", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Ticket> tickets_reporters;
+    private String gender;
+    private String isStudent;
+    private String lineManager;
+    private String departmentName;
+    private String employmentStatus;
+    private Date startDate;
+    private Date startDateInCompany;
+    private Date serviceDate;
+    private String homeCountry;
+    private String currentLocation;
+    private String homeOffice;
+    private String workAt;
+    private Date plannedBusinessTripEndDate;
+    private Date plannedLeaveEndDate;
+    private String workPhone;
+    private String publicCellPhone;
+    private String eMail;
+    private String skype;
+    private String currentAssignment;
+    private String currentProjectRole;
+    private String onSiteProjectManager;
 
     public List<Ticket> getTickets_assignee() {
         return tickets_assignee;
@@ -36,6 +58,7 @@ public class Employer {
         this.tickets_reporters = tickets_reporters;
     }
 
+
     public String getFirstName() {
         return firstName;
     }
@@ -52,6 +75,173 @@ public class Employer {
         this.team = team;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String isStudent() {
+        return isStudent;
+    }
+
+    public void setStudent(String student) {
+        isStudent = student;
+    }
+
+    public String getLineManager() {
+        return lineManager;
+    }
+
+    public void setLineManager(String lineManager) {
+        this.lineManager = lineManager;
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
+    }
+
+    public String getEmploymentStatus() {
+        return employmentStatus;
+    }
+
+    public void setEmploymentStatus(String employmentStatus) {
+        this.employmentStatus = employmentStatus;
+    }
+
+    public Date getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getStartDateInCompany() {
+        return startDateInCompany;
+    }
+
+    public void setStartDateInCompany(Date startDateInCompany) {
+        this.startDateInCompany = startDateInCompany;
+    }
+
+    public Date getServiceDate() {
+        return serviceDate;
+    }
+
+    public void setServiceDate(Date serviceDate) {
+        this.serviceDate = serviceDate;
+    }
+
+    public String getHomeCountry() {
+        return homeCountry;
+    }
+
+    public void setHomeCountry(String homeCountry) {
+        this.homeCountry = homeCountry;
+    }
+
+    public String getCurrentLocation() {
+        return currentLocation;
+    }
+
+    public void setCurrentLocation(String currentLocation) {
+        this.currentLocation = currentLocation;
+    }
+
+    public String getHomeOffice() {
+        return homeOffice;
+    }
+
+    public void setHomeOffice(String homeOffice) {
+        this.homeOffice = homeOffice;
+    }
+
+    public String getWorkAt() {
+        return workAt;
+    }
+
+    public void setWorkAt(String workAt) {
+        this.workAt = workAt;
+    }
+
+    public Date getPlannedBusinessTripEndDate() {
+        return plannedBusinessTripEndDate;
+    }
+
+    public void setPlannedBusinessTripEndDate(Date plannedBusinessTripEndDate) {
+        this.plannedBusinessTripEndDate = plannedBusinessTripEndDate;
+    }
+
+    public Date getPlannedLeaveEndDate() {
+        return plannedLeaveEndDate;
+    }
+
+    public void setPlannedLeaveEndDate(Date plannedLeaveEndDate) {
+        this.plannedLeaveEndDate = plannedLeaveEndDate;
+    }
+
+    public String getWorkPhone() {
+        return workPhone;
+    }
+
+    public void setWorkPhone(String workPhone) {
+        this.workPhone = workPhone;
+    }
+
+    public String getPublicCellPhone() {
+        return publicCellPhone;
+    }
+
+    public void setPublicCellPhone(String publicCellPhone) {
+        this.publicCellPhone = publicCellPhone;
+    }
+
+    public String geteMail() {
+        return eMail;
+    }
+
+    public void seteMail(String eMail) {
+        this.eMail = eMail;
+    }
+
+    public String getSkype() {
+        return skype;
+    }
+
+    public void setSkype(String skype) {
+        this.skype = skype;
+    }
+
+    public String getCurrentAssignment() {
+        return currentAssignment;
+    }
+
+    public void setCurrentAssignment(String currentAssignment) {
+        this.currentAssignment = currentAssignment;
+    }
+
+    public String getCurrentProjectRole() {
+        return currentProjectRole;
+    }
+
+    public void setCurrentProjectRole(String currentProjectRole) {
+        this.currentProjectRole = currentProjectRole;
+    }
+
+    public String getOnSiteProjectManager() {
+        return onSiteProjectManager;
+    }
+
+    public void setOnSiteProjectManager(String onSiteProjectManager) {
+        this.onSiteProjectManager = onSiteProjectManager;
+    }
 
     public String getLastName() {
         return lastName;
