@@ -41,6 +41,23 @@ public class Employer {
     private String currentAssignment;
     private String currentProjectRole;
     private String onSiteProjectManager;
+    private String hashPassword;
+
+    public String getIsStudent() {
+        return isStudent;
+    }
+
+    public void setIsStudent(String isStudent) {
+        this.isStudent = isStudent;
+    }
+
+    public String getHashPassword() {
+        return hashPassword;
+    }
+
+    public void setHashPassword(String hashPassword) {
+        this.hashPassword = hashPassword;
+    }
 
     public List<Ticket> getTickets_assignee() {
         return tickets_assignee;

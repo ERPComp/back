@@ -9,5 +9,6 @@ import java.util.List;
 @Repository
 public interface EmployerRepository extends CrudRepository<Employer, Long> {
     List<Employer> findAll();
+    Employer findByEMail(String email);
 
 }
