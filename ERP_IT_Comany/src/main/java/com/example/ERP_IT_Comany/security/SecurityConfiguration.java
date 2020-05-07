@@ -42,6 +42,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .addFilter(new JwtAuthorizationFilter(authenticationManager(), this.employerRepository))
                 .authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/login").permitAll()
+                .antMatchers("/employers/*").permitAll()
                 .anyRequest().authenticated();
     }
     @Bean

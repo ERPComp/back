@@ -35,7 +35,7 @@ public class UserPrincipal implements UserDetails {
 
     @Override
     public String getUsername() {
-        return this.employer.geteMail();
+        return this.employer.getLogin();
     }
 
     @Override

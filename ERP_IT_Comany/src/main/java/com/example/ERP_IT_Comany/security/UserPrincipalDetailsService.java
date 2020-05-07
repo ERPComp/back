@@ -18,8 +18,8 @@ public class UserPrincipalDetailsService implements UserDetailsService {
     }
 
     @Override
-    public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        Employer employer = employerRepository.findByEMail(s);
+    public UserDetails loadUserByUsername(String login) throws UsernameNotFoundException {
+        Employer employer = employerRepository.findByLogin(login);
         UserPrincipal userPrincipal = new UserPrincipal(employer);
         return userPrincipal;
 

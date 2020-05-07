@@ -36,7 +36,7 @@ public class Employer {
     private Date plannedLeaveEndDate;
     private String workPhone;
     private String publicCellPhone;
-    private String eMail;
+    private String login;
     private String skype;
     private String currentAssignment;
     private String currentProjectRole;
@@ -220,12 +220,12 @@ public class Employer {
         this.publicCellPhone = publicCellPhone;
     }
 
-    public String geteMail() {
-        return eMail;
+    public String getLogin() {
+        return login;
     }
 
-    public void seteMail(String eMail) {
-        this.eMail = eMail;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public String getSkype() {
